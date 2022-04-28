@@ -14,13 +14,16 @@ import { NavComponent } from './components/template/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
-import { HomeComponent } from './components/views/home/home.component';
+import {HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
-import { CategorieReadComponent } from './components/views/categorie/categorie-read/categorie-read.component';
+import {CategorieReadComponent } from './components/views/categorie/categorie-read/categorie-read.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
-import { CategorieCreateComponent } from './components/views/categorie/categorie-create/categorie-create.component';
-
+import {CategorieCreateComponent } from './components/views/categorie/categorie-create/categorie-create.component';
+import {FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -45,6 +48,10 @@ import { CategorieCreateComponent } from './components/views/categorie/categorie
     MatTableModule,
     HttpClientModule,
     MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,20 @@
-<p>categorie-create works!</p>
+<form>
+    <h1> INSERIR CATEGORIA</h1>
+
+    <mat-form-field class="form" appearance="outline" color="accent">
+        <mat-label>Nome:</mat-label>
+        <input matInput [(ngModel)]="categorie.name" type="text" name="name" placeholder="Ex:Computação">
+    </mat-form-field>
+    <mat-form-field class="form" appearance="outline" color="accent">
+        <mat-label>Descrição:</mat-label>
+        <input matInput [(ngModel)]="categorie.description "type="text" name="description" placeholder="Ex:Livros de Computação">
+    </mat-form-field>
+    
+    <div class="buttons">
+        <button (click)="create()" mat-raised-button color="accent">INSERIR CATEGORIA</button>
+        <button (click)="cancel()" mat-raised-button  color="warn">CANCELAR</button>
+
+    </div>
+
+
+</form> 
