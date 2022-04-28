@@ -25,6 +25,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategorieDeleteComponent } from './components/views/categorie/categorie-delete/categorie-delete.component';
+import { CategorieUpdateComponent } from './components/views/categorie/categorie-update/categorie-update.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CategorieDeleteComponent } from './components/views/categorie/categorie
     HomeComponent,
     CategorieReadComponent,
     CategorieCreateComponent,
-    CategorieDeleteComponent
+    CategorieDeleteComponent,
+    CategorieUpdateComponent
   ],
   imports: [
     BrowserModule,
