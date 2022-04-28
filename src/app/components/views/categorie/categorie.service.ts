@@ -15,7 +15,7 @@ export class CategorieService {
   }
 
     findAll(): Observable<Categorie[]>{
-      const url = `${this.baseUrl}categories`
+      const url = `${this.baseUrl}/categories`
       return this.http.get<Categorie[]>(url);
     }
 

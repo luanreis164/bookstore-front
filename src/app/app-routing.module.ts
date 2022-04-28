@@ -2,6 +2,7 @@ import { CategorieReadComponent } from './components/views/categorie/categorie-r
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/views/home/home.component';
+import { CategorieCreateComponent } from './components/views/categorie/categorie-create/categorie-create.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'categories',
     component: CategorieReadComponent
+  },
+  {
+    path:'categories/create',
+    component: CategorieCreateComponent
 
   }
 

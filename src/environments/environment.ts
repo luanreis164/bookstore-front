@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:'https://bookstore-proj.herokuapp.com/'
+  baseUrl:'https://bookstore-proj.herokuapp.com'
 };
 
 /*
