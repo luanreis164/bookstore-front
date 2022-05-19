@@ -26,6 +26,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategorieDeleteComponent } from './components/views/categorie/categorie-delete/categorie-delete.component';
 import { CategorieUpdateComponent } from './components/views/categorie/categorie-update/categorie-update.component';
+import { BookReadAllComponent } from './components/views/book/book-read-all/book-read-all.component';
+import { BookCreateComponent } from './components/views/book/book-create/book-create.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { CategorieUpdateComponent } from './components/views/categorie/categorie
     CategorieReadComponent,
     CategorieCreateComponent,
     CategorieDeleteComponent,
-    CategorieUpdateComponent
+    CategorieUpdateComponent,
+    BookReadAllComponent,
+    BookCreateComponent
   ],
   imports: [
     BrowserModule,
