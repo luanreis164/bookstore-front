@@ -28,6 +28,7 @@ import { CategorieDeleteComponent } from './components/views/categorie/categorie
 import { CategorieUpdateComponent } from './components/views/categorie/categorie-update/categorie-update.component';
 import { BookReadAllComponent } from './components/views/book/book-read-all/book-read-all.component';
 import { BookCreateComponent } from './components/views/book/book-create/book-create.component';
+import { BookUpdateComponent } from './components/views/book/book-update/book-update.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { BookCreateComponent } from './components/views/book/book-create/book-cr
     CategorieDeleteComponent,
     CategorieUpdateComponent,
     BookReadAllComponent,
-    BookCreateComponent
+    BookCreateComponent,
+    BookUpdateComponent
   ],
   imports: [
     BrowserModule,

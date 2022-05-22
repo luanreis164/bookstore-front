@@ -1,3 +1,4 @@
+import { BookUpdateComponent } from './components/views/book/book-update/book-update.component';
 import { BookCreateComponent } from './components/views/book/book-create/book-create.component';
 import { BookReadAllComponent } from './components/views/book/book-read-all/book-read-all.component';
 import { CategorieUpdateComponent } from './components/views/categorie/categorie-update/categorie-update.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'categories/:id_cat/books/create',
     component: BookCreateComponent
+  },
+  {
+    path:'categories/:id_cat/books/:id/update',
+    component: BookUpdateComponent
   }
 
 ];
