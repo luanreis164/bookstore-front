@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Book } from './book.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -11,11 +12,24 @@ export class BookService {
 
   baseUrl : String = environment.baseUrl;
 
-  constructor(private http : HttpClient,) { }
+  constructor(private http : HttpClient, private _snack: MatSnackBar) { }
 
   findAllByCategorie(id_cat: String) : Observable<Book[]>{
-    const url = `${this.baseUrl}/books?categorie=${id_cat}`
+    const url = `${this.baseUrl}/books?categorie=${id_cat}`;
     return this.http.get<Book[]>(url);
+  }
+
+  create(book : Book, id_cat: String) : Observable<Book>{
+    const url = `${this.baseUrl}/books?categorie=${id_cat}`;
+    return this.http.post<Book>(url,book);
+  }
+
+  message(str:string) : void{
+    this._snack.open(`${str}`,'OK',{
+      horizontalPosition:'end',
+      verticalPosition:'top',
+      duration: 4100
+    })
   }
 
 

@@ -22,7 +22,7 @@ export class BookReadAllComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.id_cat = this.rout.snapshot.paramMap.get("id")!;
+    this.id_cat = this.rout.snapshot.paramMap.get("id_cat")!;
     this.findAll();
   }
 

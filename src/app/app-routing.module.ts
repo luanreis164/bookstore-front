@@ -30,11 +30,11 @@ const routes: Routes = [
     component: CategorieUpdateComponent
   },
   {
-    path:'categories/:id/books',
+    path:'categories/:id_cat/books',
     component: BookReadAllComponent
   },
   {
-    path:'categories/:id/books/create',
+    path:'categories/:id_cat/books/create',
     component: BookCreateComponent
   }
 

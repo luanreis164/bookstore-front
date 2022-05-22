@@ -3,21 +3,25 @@
 
     <mat-form-field class="form" appearance="outline" color="accent">
         <mat-label>Titulo:</mat-label>
-        <input matInput type="text" name="title" maxlength="100" placeholder="Ex: Game of Thrones...">
+        <input matInput [(ngModel)]="book.title" [formControl]="title" required type="text" name="title" maxlength="100" placeholder="Ex: Game of Thrones...">
+        <mat-error *ngIf="title.invalid"> {{ getMessage() }} </mat-error>
     </mat-form-field>
 
     <mat-form-field class="form" appearance="outline" color="accent">
         <mat-label>Nome do autor:</mat-label>
-        <input matInput type="text" name="authorName"  maxlength="100" placeholder="Ex: George R. R. Martin...">
+        <input matInput [(ngModel)]="book.authorName" [formControl]="authorName" required type="text" name="authorName"  maxlength="100" placeholder="Ex: George R. R. Martin...">
+        <mat-error *ngIf="authorName.invalid"> {{ getMessage() }} </mat-error>
+
     </mat-form-field>
 
     <mat-form-field class="form" appearance="outline" color="accent">
         <mat-label>Descrição:</mat-label>
-        <input matInput type="text" name="description" style="height:80px" maxlength="2000000" placeholder="A guerra dos tronos é o primeiro livro da série best-seller internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de sucesso da HBO, Game of Thrones.">
+        <input matInput [(ngModel)]="book.description" [formControl]="description" required type="text" name="description" style="height:80px" maxlength="2000000" placeholder="A guerra dos tronos é o primeiro livro da série best-seller internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de sucesso da HBO, Game of Thrones.">
+        <mat-error *ngIf="description.invalid"> {{ getMessage() }} </mat-error>
     </mat-form-field>
     
     <div class="buttons">
-        <button  mat-raised-button color="accent">INSERIR CATEGORIA</button>
+        <button (click)="create()" [disabled]="getMessage()" mat-raised-button  color="accent">INSERIR CATEGORIA</button>
         <button  mat-raised-button  color="warn">VOLTAR</button>
 
     </div>
