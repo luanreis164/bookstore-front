@@ -60,5 +60,8 @@ export class BookCreateComponent implements OnInit {
     return false;
   }
 
+  cancel() : void{
+    this.router.navigate([`categories/${this.id_cat}/books/`]);
+  }
 
 }
