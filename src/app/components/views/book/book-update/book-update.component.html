@@ -21,7 +21,7 @@
     </mat-form-field>
     
     <div class="buttons">
-        <button [disabled]="getMessage()" mat-raised-button  color="accent">INSERIR LIVRO</button>
+        <button (click)="update()" [disabled]="getMessage()" mat-raised-button  color="accent">ATUALIZAR LIVRO</button>
         <button (click)="cancel()" mat-raised-button  color="warn">VOLTAR</button>
 
     </div>
